@@ -31,15 +31,30 @@
   
   .bottom-cup {
     position: absolute;
-    top: 310px;
+    top: 300px;
     left: 100px;
   }
   
   .triangle {
-    width: 50%;
-    height: 90%;
+    width: 20%;
+    height: 20%;
     background-color: red;
     clip-path: polygon(0 0, 0% 100%,100% 50%);
+    transform: rotate(90deg) scale(0.5) translate(0px, 5px);
+  }
+  
+  .stripes {
+    background-image: linear-gradient(#0432ff 49%, #feffff 50%);
+    background-size: 100% 40%;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+  }
+  
+  .cafetera {
+    z-index: -1
   }
 
 </style>
@@ -48,10 +63,12 @@
 <div class="frame">
 	<div class="cafetera">
     <div class="bustello"></div>
-    <div class="cup top-cup"></div>
+    <div class="triangle"></div>
+    <div class="cup top-cup">
+      <div class="stripes"></div>
+    </div>
     <div class="cup bottom-cup">
-      <div class="triangle"></div>
-      <div class="strips"></div>
+      <div class="stripes"></div>
     </div>
     <div class="top"></div>
   </div>
