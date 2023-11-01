@@ -55,7 +55,29 @@
   }
   
   .cafetera {
-    z-index: -1
+    z-index: -1;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 210px;
+    height: 300px;
+    border: 1px solid orange;
+  }
+  
+  .caf-middle {
+    width: 90%;
+    height: 55%;
+    background: linear-gradient (90deg, rgba(255,122,0,1) 0%,
+    rgba(214,110,15,1) 24%, rgba(241,143,49,1) 25%,
+    rgba(242,138,37,1) 46%, rgba(255,122,0,1) 46%,
+    rgba(242,138,38,1) 55%, rgba(214,110,15,1) 69%,
+    rgba(238,126,24,1) 70%);
+    position: absolute;
+    top: 14%;
+    left: 15%;
+    z-index: 5;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transform: perspective(1000px) rotate(-30deg);
   }
   
   .bustello {
@@ -74,14 +96,17 @@
 
 <div class="frame">
 	<div class="cafetera">
-  <div class="bustello"></div>
-  <div class="triangle"></div>
-  <div class="cup top-cup">
-    <div class="stripes"></div>
-  </div>
-  <div class="cup bottom-cup">
-    <div class="stripes"></div>
-  </div>
-  <div class="top"></div>
+    <div class="caf-middle">
+    </div>
+    <div class="bustello">
+      <div class="triangle"></div>
+    </div>
+    <div class="cup top-cup">
+      <div class="stripes"></div>
+    </div>
+    <div class="cup bottom-cup">
+      <div class="stripes"></div>
+    </div>
+    <div class="top"></div>
   </div>
 </div>
