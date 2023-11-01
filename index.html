@@ -1,0 +1,58 @@
+<style>
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+	
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+  }
+  
+  .cup {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .top-cup {
+    position: absolute;
+    top: 210px;
+    left: 100px
+  }
+  
+  .bottom-cup {
+    position: absolute;
+    top: 310px;
+    left: 100px;
+  }
+  
+  .triangle {
+    width: 50%;
+    height: 90%;
+    background-color: red;
+    clip-path: polygon(0 0, 0% 100%,100% 50%);
+  }
+
+</style>
+
+
+<div class="frame">
+	<div class="cafetera">
+    <div class="bustello"></div>
+    <div class="cup top-cup"></div>
+    <div class="cup bottom-cup">
+      <div class="triangle"></div>
+      <div class="strips"></div>
+    </div>
+    <div class="top"></div>
+  </div>
+</div>
