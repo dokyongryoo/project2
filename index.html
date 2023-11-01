@@ -21,6 +21,7 @@
     border: 1px solid black;
     width: 100px;
     height: 100px;
+    background-color: white;
   }
   
   .top-cup {
@@ -40,7 +41,7 @@
     height: 20%;
     background-color: red;
     clip-path: polygon(0 0, 0% 100%,100% 50%);
-    transform: rotate(90deg) scale(0.5) translate(0px, 5px);
+    transform: rotate(90deg) scale(0.5) translate(350px, -525px);
   }
   
   .stripes {
@@ -56,20 +57,31 @@
   .cafetera {
     z-index: -1
   }
+  
+  .bustello {
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    position: absolute;
+    top: 33%;
+    left: 45%;
+    background-color: yellow;
+    z-index: -1;
+  }
 
 </style>
 
 
 <div class="frame">
 	<div class="cafetera">
-    <div class="bustello"></div>
-    <div class="triangle"></div>
-    <div class="cup top-cup">
-      <div class="stripes"></div>
-    </div>
-    <div class="cup bottom-cup">
-      <div class="stripes"></div>
-    </div>
-    <div class="top"></div>
+  <div class="bustello"></div>
+  <div class="triangle"></div>
+  <div class="cup top-cup">
+    <div class="stripes"></div>
+  </div>
+  <div class="cup bottom-cup">
+    <div class="stripes"></div>
+  </div>
+  <div class="top"></div>
   </div>
 </div>
