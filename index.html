@@ -18,6 +18,27 @@
     border: 1px solid black;
   }
 
+  .barcode {
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    border: 1px solid white;
+    background-color: white;
+    z-index: 1
+  }
+
+  .stripes {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    background-image: linear-gradient(hsl(229, 100%, 100%) 30%, #000000 90%);
+    background-size: 100% 10%;
+  }
+
   .cup {
     border: 1px solid black;
     width: 100px;
@@ -38,7 +59,7 @@
     left: 80px;
     z-index: 2;
   }
-  
+
   .solo-cup {
     position: absolute;
     top: 5px;
@@ -55,7 +76,7 @@
     transform: rotate(90deg) scale(0.5) translate(50px, -70px);
     z-index: 4;
   }
-  
+
   .black-triangle {
     width: 25%;
     height: 45%;
@@ -65,7 +86,7 @@
     transform: rotate(270deg) scale(0.5) translate(-10px, 100px);
     z-index: 3;
   }
-  
+
   .yellow-triangle {
     width: 10%;
     height: 8%;
@@ -149,7 +170,7 @@
     border: 1px solid black;
     z-index: -3;
   }
-  
+
   .caf-hole {
     width: 7%;
     height: 3%;
@@ -208,7 +229,18 @@
     background-color: red;
     z-index: 1;
   }
-  
+
+  .bustello-can-bottom {
+    width: 205px;
+    height: 10px;
+    position: absolute;
+    top: 100%;
+    left: -1.5%;
+    background-color: gray;
+    border: 1px solid black;
+    z-index: 1;
+  }
+
   .top-label {
     width: 70px;
     height: 120px;
@@ -218,7 +250,7 @@
     left: 60%;
     z-index: 1
   }
-  
+
   .bottom-label {
     width: 70px;
     height: 80px;
@@ -228,7 +260,6 @@
     left: 60%;
     z-index: 1
   }
-  
 </style>
 
 
@@ -248,6 +279,10 @@
       <div class="bustello-bottom"></div>
       <div class="top-label"></div>
       <div class="bottom-label"></div>
+      <div class="bustello-can-bottom"></div>
+      <div class="barcode">
+        <div class="stripes"></div>
+      </div>
     </div>
     <div class="cup top-cup">
       <div class="blue-stripes"></div>
